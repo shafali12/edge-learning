@@ -1,0 +1,39 @@
+{
+  "variantName": "carousel-hero",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-08-21T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.loreal.com/en",
+    "originPage": "L'Oréal corporate landing page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + CTA",
+    "buttonCount": 1,
+    "imageCount": 1,
+    "slideCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "landing pages with a rotating full-bleed hero banner",
+      "homepages promoting multiple campaigns",
+      "pages needing an image-forward hero with per-slide CTA"
+    ],
+    "notSuitableFor": [
+      "text-only hero sections",
+      "single static hero banners with no rotation"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-08-21T00:00:00.000Z"
+  }
+}
