@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-story",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-08-21T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.loreal.com/en",
+    "originPage": "L'Oréal corporate landing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "feature",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + title",
+    "buttonCount": 0,
+    "imageCount": 1,
+    "cardCount": 5
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "story/feature card rows with image and title",
+      "navigational card grids linking to section pages",
+      "horizontally scrollable card collections"
+    ],
+    "notSuitableFor": [
+      "cards without images",
+      "cards with long body copy and multiple CTAs"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-08-21T00:00:00.000Z"
+  }
+}
