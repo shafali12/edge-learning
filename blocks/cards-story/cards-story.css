@@ -7,89 +7,21 @@
   gap: 24px;
 }
 
-/* Card is a positioning context so the body overlays the image. */
 .cards-story > ul > li {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  aspect-ratio: 3 / 4;
-  isolation: isolate;
+  border: 1px solid #dadada;
+  background-color: var(--background-color);
 }
 
-/* Image fills the whole card. */
-.cards-story .cards-story-card-image {
-  position: absolute;
-  inset: 0;
-  line-height: 0;
-  z-index: 0;
-}
-
-.cards-story .cards-story-card-image picture,
-.cards-story .cards-story-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Gradient scrim so overlaid text stays legible over any photo. */
-.cards-story > ul > li::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(to top, rgb(0 0 0 / 65%) 0%, rgb(0 0 0 / 15%) 40%, rgb(0 0 0 / 0%) 70%);
-  pointer-events: none;
-}
-
-/* Body overlaid on the image, anchored to the bottom. */
 .cards-story .cards-story-card-body {
-  position: absolute;
-  inset: auto 0 0;
-  z-index: 2;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-  padding: 20px;
-  color: #fff;
+  margin: 16px;
 }
 
-.cards-story .cards-story-card-body h3 {
-  margin: 0;
-  color: #fff;
-  font-size: 1.25rem;
-  line-height: 1.2;
-  text-shadow: 0 1px 3px rgb(0 0 0 / 40%);
+.cards-story .cards-story-card-image {
+  line-height: 0;
 }
 
-/* Hide the descriptive paragraph in the overlay design (kept in content for
-   authoring/SEO, but the live card shows only title + Discover button). */
-.cards-story .cards-story-card-body p:not(.button-container) {
-  display: none;
-}
-
-.cards-story .cards-story-card-body .button-container {
-  margin: 0;
-}
-
-/* Discover pill button. */
-.cards-story .cards-story-card-body .button,
-.cards-story .cards-story-card-body a.button {
-  display: inline-block;
-  margin: 0;
-  padding: 8px 22px;
-  border-radius: 999px;
-  background: #fff;
-  color: #000;
-  font-size: 0.95rem;
-  font-weight: 400;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.cards-story .cards-story-card-body .button:hover {
-  background: #000;
-  color: #fff;
+.cards-story > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
