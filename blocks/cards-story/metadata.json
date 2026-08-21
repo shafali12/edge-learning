@@ -32,8 +32,8 @@
     ]
   },
   "usage": {
-    "pagesUsing": ["/en"],
-    "reuseCount": 1,
+    "pagesUsing": ["/en", "/en/groupe"],
+    "reuseCount": 2,
     "lastUsed": "2026-08-21T00:00:00.000Z"
   }
 }
